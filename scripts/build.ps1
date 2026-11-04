@@ -2,7 +2,7 @@ param([switch]$SyncSdk)
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 $root = Split-Path -Parent $PSScriptRoot
-$name = Split-Path -Leaf $root
+$name = 'wp-snapppay'
 if ($SyncSdk -and $name -eq 'wp-snapppay') {
     $sdk = Join-Path (Split-Path -Parent $root) 'webinew-license-manager/sdk/class-webinew-license-client.php'
     Copy-Item -LiteralPath $sdk -Destination (Join-Path $root 'wp-snapppay/includes/class-webinew-license-client.php') -Force
