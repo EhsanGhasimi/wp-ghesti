@@ -1,0 +1,11 @@
+.validation/
+node_modules/
+
+
+.secrets/
+*signing-backup*.json
+webinew-recovery-code*.txt
+
+
+dist/wp-snapppay.zip
+
